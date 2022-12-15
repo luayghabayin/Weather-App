@@ -1,0 +1,118 @@
+@font-face {
+  font-family: 'HoneySilk';
+  src: url(fonts/HoneySilk.ttf);
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(images/weatherbg.jpg);
+    font-size: 120%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.btn {
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    outline: none;
+    background: #bbbbbb2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border: 1px solid black;
+  } 
+
+  .btn:hover{
+    color: white;
+    background: #f77062;
+    transition: all 0.3s ease;
+  }
+
+  .bg_info{
+    background-color: #757575d7;
+    border-radius: 30px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title{
+    color: -webkit-linear-gradient(#eee, #333);
+    max-width: 400px;
+    font-family: "HoneySilk";
+    background-color: #ffffff5d;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+  }
+
+  .nav{
+    background-color: #757575d7;
+    padding: 1em;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: 3px solid white;
+  }
+
+
+  @keyframes pencil-twist {
+    0% {
+      transform: rotate(0deg);
+    }
+    20% {
+      transform: rotate(30deg);
+      left: 18rem;
+    }
+    80% {
+      right: 20rem;
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+  }
+  
+  .searchbox {
+    position: relative;
+    margin-left: auto;
+    margin-top: auto;
+  }
+  .searchbox:after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0.35rem;
+    left: 20rem;
+    background-color: #7db8fc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+  }
+  .searchbox:focus-within:after {
+    animation-name: pencil-twist;
+  }
+  .searchbox input {
+    width: 11rem;
+    background-color: transparent;
+    border-color: transparent;
+    border-bottom: 0.07px solid #134b80e7;
+    border-radius: 0;
+    color: #ffffff;
+    text-align: left;
+  }
+  .searchbox input:focus {
+    border-bottom: 0.07px solid #7db8fc;
+    outline: unset;
+  }
+
+  #date-time{
+    color: rgb(32, 32, 32);
+    font-size: 15px;
+  }
